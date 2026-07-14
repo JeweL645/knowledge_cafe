@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1011,
+    "coverImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "title": "The Art of Timeless Leather Craftsmanship",
+    "author": "Elias Morgan",
+    "author_img": "https://randomuser.me/api/portraits/men/32.jpg",
+    "posted_date": "July 10, 2026",
+    "reading_time": 5,
+    "hashtag": ["Leather", "Craftsmanship", "Luxury"]
+  },
+  {
+    "id": 1012,
+    "coverImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "5 Simple Ways to Style a Leather Belt",
+    "author": "Sophia Carter",
+    "author_img": "https://randomuser.me/api/portraits/women/44.jpg",
+    "posted_date": "July 8, 2026",
+    "reading_time": 4,
+    "hashtag": ["Fashion", "Style", "Leather Belt"]
+  },
+  {
+    "id": 1013,
+    "coverImage": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f",
+    "title": "Choosing Premium Leather for Everyday Use",
+    "author": "James Wilson",
+    "author_img": "https://randomuser.me/api/portraits/men/55.jpg",
+    "posted_date": "July 5, 2026",
+    "reading_time": 6,
+    "hashtag": ["Premium Leather", "Quality", "Guide"]
+  },
+  {
+    "id": 1014,
+    "coverImage": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518",
+    "title": "Why Minimal Accessories Never Go Out of Style",
+    "author": "Emma Brown",
+    "author_img": "https://randomuser.me/api/portraits/women/28.jpg",
+    "posted_date": "July 2, 2026",
+    "reading_time": 3,
+    "hashtag": ["Minimalism", "Accessories", "Classic"]
+  },
+  {
+    "id": 1015,
+    "coverImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    "title": "How to Care for Genuine Leather Products",
+    "author": "Noah Anderson",
+    "author_img": "https://randomuser.me/api/portraits/men/18.jpg",
+    "posted_date": "June 28, 2026",
+    "reading_time": 7,
+    "hashtag": ["Leather Care", "Tips", "Lifestyle"]
+  }
+]
