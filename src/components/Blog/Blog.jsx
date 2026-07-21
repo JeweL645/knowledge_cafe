@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { BsBookmarks } from "react-icons/bs";
 
-const Blog = ({ blog, handleAddToBookmark }) => {
+const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
   const {
     title,
     coverImage,
@@ -12,7 +12,7 @@ const Blog = ({ blog, handleAddToBookmark }) => {
     hashtag,
   } = blog;
   return (
-    <div className="border my-2 p-4 rounded-4xl">
+    <div className="border my-2 p-4 rounded-4xl space-y-4">
       <img className="w-full  mb-8" src={coverImage} alt={title} />
       <div className="flex justify-between items-center my-4 mx-4">
         <div className="flex">
@@ -24,7 +24,10 @@ const Blog = ({ blog, handleAddToBookmark }) => {
         </div>
         <div className="flex items-center">
           <span>{reading_time} min read</span>
-          <button onClick={() => handleAddToBookmark(blog)} className=" ml-4 text-red-600 text-2xl">
+          <button
+            onClick={() => handleAddToBookmark(blog)}
+            className=" ml-4 text-red-600 text-2xl"
+          >
             <BsBookmarks></BsBookmarks>
           </button>
         </div>
@@ -32,15 +35,24 @@ const Blog = ({ blog, handleAddToBookmark }) => {
 
       <h2 className="text-4xl my-4 font-bold">{title}</h2>
       <p>
-        {
-          hashtag.map( (hash, idx)  => <span key={idx}> <a className="mr-5 text-blue-600 text-xl" href="">#{hash}</a> </span>)
-        }</p>
+        {hashtag.map((hash, idx) => (
+          <span key={idx}>
+            {" "}
+            <a className="mr-5 text-blue-600 text-xl" href="">
+              #{hash}
+            </a>{" "}
+          </span>
+        ))}
+      </p>
+      <button onClick={() => handleMarkAsRead(reading_time)}
+      className="text-purple-600 font-bold underline">mark as read</button>
     </div>
   );
 };
 
 Blog.propType = {
   blog: PropTypes.object.isRequired,
-  handleAddToBookmark: PropTypes.func
+  handleAddToBookmark: PropTypes.func,
+  handleMarkAsRead: PropTypes.func
 };
 export default Blog;
